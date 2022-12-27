@@ -1,0 +1,18 @@
+<div class="container mt-3 d-flex flex-column justify-content-center">
+    <div>
+        <p class="w-100  text-center text-light py-2 {{bg}}">{{validacion}}</p>
+    </div>
+    <div class="container__input"> 
+        <input type="number" class="form-control" [(ngModel)]="numero1"  autofocus  > <span class="fs-3 fw-bold">{{operador}}</span>
+        <input type="number" class="form-control" [(ngModel)]="numero2" [disabled]="deshabilitar">
+        <button (click)="operacion('=')"><i class="fa-solid fa-equals"></i></button>
+    </div>
+    <div class="container__calcular">
+        <div class="container__button">
+            <button (click)="operacion('+')" ><i class="fa-solid fa-plus"></i></button>
+            <button (click)="operacion('-')"><i class="fa-solid fa-minus"></i></button>
+            <button (click)="operacion('/')"><i class="fa-solid fa-divide"></i></button>
+            <button (click)="operacion('*')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+</div>

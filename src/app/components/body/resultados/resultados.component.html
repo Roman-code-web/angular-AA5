@@ -1,0 +1,12 @@
+<div class="container h-100 d-flex justify-content-center align-items-center">
+    <div class="card w-100">
+        <div class="card-body">
+          <h5 class=" text-center card-title">Resultados</h5>
+          <div style="height:auto; min-height: 150px;">
+            <p class="text-center" style="font-size: 5.5rem; overflow-y: sc;" [textContent]="recibirResultado" >{{recibirResultado==null && recibirResultado=="NaN" ? 0:recibirResultado }}</p>
+          </div>
+          <button class="w-100 btn btn-danger" (click)="borrarResultados()">Borrar</button>
+        </div>
+      </div>
+    
+</div>
