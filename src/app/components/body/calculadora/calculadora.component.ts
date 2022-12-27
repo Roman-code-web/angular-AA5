@@ -6,6 +6,7 @@ import { Component,EventEmitter,Input,Output, SimpleChanges } from '@angular/cor
   styleUrls: ['./calculadora.component.css']
 })
 export class CalculadoraComponent {
+  titulo="Ingresa números"
   //declaracion de variables
   numero1!:number;
   numero2!:number;
